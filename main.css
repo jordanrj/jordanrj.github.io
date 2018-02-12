@@ -12,12 +12,22 @@
         margin: 0 5px;
     }
 
+    header {
+        background: rgb(49, 148, 165);
+        color: rgb(250,250,250);;
+    }
+
+    header h1 {
+        font-weight: lighter;
+    }
+
     nav ul {
         float: right;
     }
 
     nav ul li {
-        color: black;
+        color: white;
+        
     }
 
     nav ul li:hover {
@@ -43,7 +53,7 @@
     }
 
     .myPic {
-        width: 60vw;
+        width: 65vw;
         height: 60vw;
         border-radius: 10030px;
         margin: 10px 20vw;
@@ -127,7 +137,7 @@
     .myPic {
         margin: 3vw 7vw;
         display: inline-block;
-        max-width: 35vw;
+        max-width: 40vw;
         max-height: 35vw;     
     }
 
@@ -157,7 +167,7 @@
 
     .myPic {
         max-height: 25vw;
-        max-width: 25vw;
+        max-width: 26vw;
         margin-right: 5vw;
     }
 }
@@ -166,7 +176,7 @@
     header {
         width: 100%;
         padding: 0;
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid rgb(250,250,250);
     }
 
     .aboutMeBlurbDiv {
@@ -197,12 +207,17 @@
         padding-top: 65vh;
     }
 
+    .projectArea a {
+        text-decoration: none;
+    }
+
     .projectAreaHeader {
         width: 95%;
         height: 100%;
     }
 
     .project {
+        color: black;
         display: inline-block;
         width: 30%;
         margin: 1.4%;
