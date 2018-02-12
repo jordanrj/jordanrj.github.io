@@ -189,6 +189,13 @@
         max-height: 20vw;
         width: 100%;
     }
+
+    .project:hover {
+        height: 24.2vh;
+        border-bottom: .4vh solid rgb(49, 148, 165);
+        border-top: .4vh solid rgb(49, 148, 165);
+        
+    }
 }
 
 @media (min-width: 1200px) {
