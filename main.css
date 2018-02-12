@@ -96,6 +96,28 @@
         font-size: 1.4em;
         font-weight: 400;
     }
+
+    .socialMediaIcon {
+        width: 100px;
+        height: auto;
+        margin: 15px;
+    }
+
+    .iconContainer {
+        width: 40vw;
+        text-align: center;
+        margin: auto;
+    }
+
+    footer {
+        font-size: 1.5em;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    footer h1 {
+        padding-bottom: 30px;
+    }
 }
 
 @media (min-width: 600px) {
