@@ -40,6 +40,8 @@
     }
 
     .headerDiv {
+        margin: 0; 
+        padding: 0;
         width: 100vw;
         height: 100%;
         float: left;
@@ -47,42 +49,45 @@
         color: rgb(240,240,240);
     }
 
-    .headerDiv p {
-        margin: 15px 15px;
-        font-size: 1.2em;
+    .aboutMeBlurbDiv p {
+        margin: 0;
+        padding: 0;
     }
 
     .myPic {
         width: 65vw;
         height: 60vw;
         border-radius: 10030px;
-        margin: 10px 20vw;
+        margin: 10px 15vw;
     }
 
     .projectArea {
-        width: 100vw;
+        width: 98vw;
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-column-gap: -3vh;
         grid-row-gap: 5vh;
         padding-bottom: 10vh;
+        overflow: hidden;
     }
 
     .projectAreaHeader {
-        
-        width: 98%;
+        width: 98vw;
         grid-column: span 6;
         margin: 5vh 0 3vh 0;
         padding-left: 5px;
     }
 
     .projectAreaHeader p {
+        padding:0;
+        margin: 0;
         font-size: 1.3em;
     }
 
     .project {
+        color: black;
         grid-column: span 6;
-        width: 98%;
+        width: 100vw;
         height: auto;
         max-height: 76vw;
         margin: auto;
@@ -102,9 +107,9 @@
     }
 
     .socialMediaIcon {
-        width: 100px;
+        width: 60px;
         height: auto;
-        margin: 15px;
+        margin: 5px;
     }
 
     .iconContainer {
@@ -144,6 +149,13 @@
     .project {
        height: 32vw;
         grid-column: span 3;
+        width: 48vw;
+    }
+
+    .socialMediaIcon {
+        width: 100px;
+        height: auto;
+        margin: 15px;
     }
 }
 
@@ -175,6 +187,7 @@
         height: 25vh;
         grid-column: span 2;
         max-height: 20vw;
+        width: 100%;
     }
 }
 
@@ -230,7 +243,6 @@
         max-width: 70%;
         display: block;
         margin: auto;
-        padding-top: 65vh;
     }
 
     .projectArea a {
