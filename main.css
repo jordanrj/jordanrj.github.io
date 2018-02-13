@@ -167,12 +167,11 @@
         height: 42vw;
     }
 
-    .aboutMeBlurbDiv {   
+    .aboutMeBlurbDiv {      
         width: 46vw;
-        height: 20vw;
         margin-top: 3vw;
         float: left;    
-        font-size: 1.3em;
+        font-size: 1.2em;
         margin-left: 2vw;
     }
 
