@@ -13,7 +13,7 @@
     }
 
     header {
-        background: rgb(49, 148, 165);
+        background: rgb(22, 101, 116);
         color: rgb(250,250,250);;
     }
 
@@ -224,6 +224,7 @@
         background-size: cover;
         background-position: center;
         height: 50vh;
+    
     }
 
     .aboutMeBlurbDiv {
@@ -265,7 +266,6 @@
 
     .myPic {
         margin-right: 10vw;
-        border-bottom: 2px solid rgb(49, 148, 165);
     }
 
     nav {
