@@ -14,8 +14,9 @@
     }
 
     header {
-        background: rgb(16, 99, 114);
-        color: rgb(250,250,250);;
+        background: rgb(248, 253, 255);
+        color: black;
+        
     }
 
     header h1 {
@@ -27,8 +28,7 @@
     }
 
     nav ul li {
-        color: white;
-        
+        color: black
     }
 
     nav ul li:hover {
@@ -38,7 +38,7 @@
     .aboutMe {
         width: 100vw;
         height: 100%;
-        background: url('https://static.pexels.com/photos/110575/pexels-photo-110575.jpeg');
+        background: url('./pics/background.jpeg');
         background-size: cover;
         background-position: center;
     }
@@ -63,8 +63,15 @@
         border-radius: 10030px;
         margin: 2vw 17.5vw;
     }
+    
+    main, footer {
+        background: rgb(238, 244, 245);
+        
+    }
 
     .projectArea {
+        background: rgb(238, 244, 245);
+        
         width: 100vw;
         display: grid;
         grid-template-columns: repeat(6, 1fr);
@@ -92,6 +99,10 @@
         max-height: 76vw;
         margin: auto;
         overflow: hidden;
+        box-shadow: 5px;
+        color: black;
+        box-shadow: 7px 10px 5px rgb(160,160,200);
+        border-radius: 0 0 2px 2px;
     }
 
     .project img {
@@ -99,11 +110,24 @@
         height: auto; 
     }
 
-    .project h1 {
+    .project:hover .projectTitle {
+        border-top: 2px solid rgba(19, 153, 153, 0.842);
+        border-bottom: 2px solid rgb(247, 165, 59);
+        transition: border .25s;
+        -webkit-transition: border .25s;
+    }
+
+    .projectTitle {
         text-decoration: underline;
         text-align: center;
         font-size: 1.4em;
         font-weight: 400;
+        padding: 7px;
+        margin-bottom: 5px;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        transition: border .25s;
+        -webkit-transition: border .25s;
     }
 
     .socialMediaIcon {
@@ -159,6 +183,14 @@
 }
 
 @media (min-width: 900px) {
+    nav h1 {
+        font-size: 2.5em;
+    }
+
+    nav ul li {
+        font-size: 1.3em;
+    }
+
     .headerDiv h1, .headerDiv p {
         width: 94%; 
     }
@@ -182,15 +214,7 @@
         max-height: 35vw;     
     }
 
-    .projectArea {
-        grid-column-gap: 30px;
-    }
-
-    .project {
-        height: 25vh;
-        grid-column: span 2;
-        max-height: 20vw;
-    }
+    
 }
 
 @media (min-width: 1200px) {
@@ -212,6 +236,16 @@
         max-height: 25vw;
         max-width: 26vw;
         margin-right: 5vw;
+    }
+
+    .projectArea {
+        grid-column-gap: 30px;
+    }
+
+    .project {
+        height: 25vh;
+        grid-column: span 2;
+        max-height: 20vw;
     }
 }
 
@@ -264,5 +298,20 @@
         width: 30%;
         margin: 1.4%;
         padding: 0;
+        box-shadow: 7px 10px 5px rgb(160,160,200);
+        border-radius: 0 0 2px 2px;
+    }
+
+    .project:hover {
+        border-top: 3px solid rgba(255, 136, 0, 0.842);
+        margin-top: -3px;
+    
+    }
+
+    .project h1 {
+        padding: 7px;
+        margin-bottom: 5px;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
     }
 } 
