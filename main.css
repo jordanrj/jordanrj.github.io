@@ -8,15 +8,14 @@
 @media (min-width: 0px) {
     header h1, nav ul, nav ul li {
         display: inline-block;
-        height: 10vh;
-        line-height: 10vh;
+        height: 50px;
+        line-height: 50px;
         margin: 0 5px;
     }
 
     header {
         background: rgb(248, 253, 255);
-        color: black;
-        
+        color: black;    
     }
 
     header h1 {
@@ -37,51 +36,40 @@
 
     .aboutMe {
         width: 100vw;
-        height: 100%;
         background: url('./pics/background.jpeg');
         background-size: cover;
         background-position: center;
     }
 
     .headerDiv {
-        height: 40vw;
         width: 100vw;
-        height: 100%;
-        float: left;
         background: rgba(0,0,0,.65);
         color: rgb(240,240,240);
     }
 
     .headerDiv p {
-        margin: 15px 15px;
+        width: 95vw;
+        margin: auto;
+        padding: 35px 0;
         font-size: 1.2em;
-    }
-
-    .myPic {
-        width: 65vw;
-        height: 60vw;
-        border-radius: 10030px;
-        margin: 2vw 17.5vw;
+        text-align: center;
     }
     
     main, footer {
         background: rgb(238, 244, 245);
-        
     }
 
     .projectArea {
         background: rgb(238, 244, 245);
-        
         width: 100vw;
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-column-gap: -3vh;
-        grid-row-gap: 5vh;
+        grid-row-gap: 6vh;
         padding-bottom: 10vh;
     }
 
-    .projectAreaHeader {
-        
+    .projectAreaHeader { 
         width: 98%;
         grid-column: span 6;
         margin: 5vh 0 3vh 0;
@@ -94,7 +82,7 @@
 
     .project {
         grid-column: span 6;
-        width: 98%;
+        width: 100%;
         height: auto;
         max-height: 76vw;
         margin: auto;
@@ -117,8 +105,7 @@
         -webkit-transition: border .25s;
     }
 
-    .projectTitle {
-        text-decoration: underline;
+    .projectTitle {              
         text-align: center;
         font-size: 1.4em;
         font-weight: 400;
@@ -129,6 +116,7 @@
         transition: border .25s;
         -webkit-transition: border .25s;
     }
+
 
     .socialMediaIcon {
         width: 100px;
@@ -154,20 +142,23 @@
 }
 
 @media (min-width: 600px) {
+    header h1, nav ul, nav ul li {
+        display: inline-block;
+        height: 60px;
+        line-height: 60px;
+        margin: 0 5px;
+    }
+
     header {
+        font-size: 1.3em;
         padding: 0 25px;
     } 
 
-    .aboutMe {
-        height: 70vh;
-    }
-
-    .myPic {
-        width: 38vw;
-        height: 36vw;
-        margin: 15px 32vw;
-        max-height: 40vh;
-        max-width: 43vh;
+    .headerDiv p {
+        width: 70vw;
+        line-height: 1.4em;
+        font-size: 1.4em;
+        padding: 30px 0;
     }
 
     .projectArea {
@@ -177,65 +168,58 @@
     }
 
     .project {
-       height: 32vw;
+        width: 98%;
+        height: 32vw;
         grid-column: span 3;
     }
 }
 
 @media (min-width: 900px) {
+    
     nav h1 {
-        font-size: 2.5em;
+        padding-left: 10px;
     }
 
     nav ul li {
-        font-size: 1.3em;
+        font-size: 1em;
     }
 
-    .headerDiv h1, .headerDiv p {
-        width: 94%; 
-    }
-
-    .aboutMe {
-        height: 42vw;
-    }
-
-    .aboutMeBlurbDiv {      
-        width: 46vw;
-        margin-top: 3vw;
-        float: left;    
+    .aboutMeBlurbDiv {   
+        width: 100vw;
+        margin: auto; 
         font-size: 1.2em;
-        margin-left: 2vw;
+        padding: 25px 0;
     }
 
-    .myPic {
-        margin: 3vw 7vw;
-        display: inline-block;
-        max-width: 40vw;
-        max-height: 35vw;     
+    .aboutMeBlurbDiv p {
+        width: 80vw;
     }
-
-    
 }
 
 @media (min-width: 1200px) {
-    header {
-        font-size: 1.3em;
+    header h1, nav ul, nav ul li {
+        display: inline-block;
+        height: 70px;
+        line-height: 70px;
+        margin: 0 5px;
     }
 
-    .aboutMe {
-        height: 32vw;
+    header h1 {
+        font-size: 1.7em;
     }
 
-    .aboutMeBlurbDiv {
-        width: 60vw;
-        margin-left: 5vw;
-        width: 50vw;
+    nav ul {
+        padding-right: 15px;
     }
 
-    .myPic {
-        max-height: 25vw;
-        max-width: 26vw;
-        margin-right: 5vw;
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    .aboutMeBlurbDiv p {
+        width: 70vw;
+        padding: 50px 0;
+        line-height: 1.7em;
     }
 
     .projectArea {
@@ -272,10 +256,6 @@
         margin-right: 10vw;
     }
 
-    nav {
-        padding: 0 15px;
-        font-size: 1.5em;
-    }
 
     .projectArea {
         max-width: 70%;
@@ -290,6 +270,11 @@
     .projectAreaHeader {
         width: 95%;
         height: 100%;
+        font-size: 1.1em;
+    }
+
+    .projectAreaHeader p {
+        padding-top: 5px;
     }
 
     .project {
@@ -297,21 +282,5 @@
         display: inline-block;
         width: 30%;
         margin: 1.4%;
-        padding: 0;
-        box-shadow: 7px 10px 5px rgb(160,160,200);
-        border-radius: 0 0 2px 2px;
-    }
-
-    .project:hover {
-        border-top: 3px solid rgba(255, 136, 0, 0.842);
-        margin-top: -3px;
-    
-    }
-
-    .project h1 {
-        padding: 7px;
-        margin-bottom: 5px;
-        border-top: 2px solid black;
-        border-bottom: 2px solid black;
     }
 } 
