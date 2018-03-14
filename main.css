@@ -5,6 +5,11 @@
     font-family: Helvetica;
 }
 
+
+body {
+    width: 100vw;
+    overflow: hidden;
+}
 @media (min-width: 0px) {
     header h1, nav ul, nav ul li {
         display: inline-block;
