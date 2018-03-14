@@ -7,8 +7,7 @@
 
 
 body {
-    width: 100vw;
-    overflow: hidden;
+    width: 100%;
 }
 @media (min-width: 0px) {
     header h1, nav ul, nav ul li {
@@ -40,14 +39,14 @@ body {
     }
 
     .aboutMe {
-        width: 100vw;
+        width: 100%;
         background: url('./pics/background.jpeg');
         background-size: cover;
         background-position: center;
     }
 
     .headerDiv {
-        width: 100vw;
+        width: 100%;
         background: rgba(0,0,0,.65);
         color: rgb(240,240,240);
     }
@@ -66,7 +65,7 @@ body {
 
     .projectArea {
         background: rgb(238, 244, 245);
-        width: 100vw;
+        width: 100%;
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-column-gap: -3vh;
@@ -190,7 +189,7 @@ body {
     }
 
     .aboutMeBlurbDiv {   
-        width: 100vw;
+        width: 100%;
         margin: auto; 
         font-size: 1.2em;
         padding: 25px 0;
