@@ -5,9 +5,8 @@
     font-family: Helvetica;
 }
 
-
 body {
-    width: 100%;
+    overflow: scroll;
 }
 @media (min-width: 0px) {
     header h1, nav ul, nav ul li {
@@ -123,13 +122,13 @@ body {
 
 
     .socialMediaIcon {
-        width: 100px;
+        width: 80px;
         height: auto;
         margin: 15px;
     }
 
     .iconContainer {
-        width: 60vw;
+        width: 90%;
         text-align: center;
         margin: auto;
     }
