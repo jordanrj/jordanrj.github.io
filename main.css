@@ -17,9 +17,7 @@ body {
     }
 
     header {
-        
         font-family: Helvetica;
-
         color: black;    
     }
 
@@ -62,12 +60,10 @@ body {
     }
     
     main, footer {
-        font-family: 'Arimo', sans-serif;
-        
+        font-family: 'Arimo', sans-serif;  
     }
 
-    .projectArea {
-        
+    .projectArea {    
         width: 100%;
         display: grid;
         grid-template-columns: repeat(6, 1fr);
@@ -103,9 +99,31 @@ body {
         transition: box-shadow .15s;
     }
 
+    
+
     .project img {
         width: 100%;
         height: auto; 
+    }
+
+    .caption-container {
+        position: relative;
+    }
+
+    .caption {
+        height: 0%;
+    }
+    
+    .project:hover .caption {
+        position: absolute;
+        top: 15px;
+        padding: 30px 15px;
+        text-align: center;
+        background-color: rgba(230,230,230,.8);
+        color: black;
+        height: 100%;
+        font-size: 1.2em;
+        transition: all .15s;
     }
 
     .project:hover .projectTitle {
