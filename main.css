@@ -2,13 +2,16 @@
 * {
     margin: 0;
     padding: 0;
-    
 }
 
 body {
+    background: rgb(59, 59, 63);
+    color: rgb(233, 233, 233);
     overflow: scroll;
 }
+
 @media (min-width: 0px) {
+    /*Header and Nav section */
     header h1, nav ul, nav ul li {
         display: inline-block;
         height: 50px;
@@ -18,7 +21,6 @@ body {
 
     header {
         font-family: Helvetica;
-        color: black;    
     }
 
     header h1 {
@@ -30,13 +32,15 @@ body {
     }
 
     nav ul li {
-        color: black
+        color: rgb(226, 222, 222);
+
     }
 
     nav ul li:hover {
         text-decoration: underline;
     }
 
+    /* Banner section */
     .aboutMe {
         width: 100%;
         background: url('./pics/background.jpeg');
@@ -63,6 +67,7 @@ body {
         font-family: 'Arimo', sans-serif;  
     }
 
+    /* Project thumbnail section */
     .projectArea {    
         width: 100%;
         display: grid;
@@ -85,6 +90,7 @@ body {
         font-size: 1.3em;
     }
 
+    /* For each project */
     .project {
         grid-column: span 6;
         width: 100%;
@@ -94,12 +100,10 @@ body {
         overflow: hidden;
         box-shadow: 5px;
         color: black;
-        box-shadow: 7px 10px 5px rgb(160,160,200);
+        box-shadow: 7px 10px 5px rgb(29, 29, 36);
         border-radius: 0 0 2px 2px;
         transition: box-shadow .15s;
     }
-
-    
 
     .project img {
         width: 100%;
@@ -114,6 +118,7 @@ body {
         height: 0%;
     }
     
+    /* For projects on hover */
     .project:hover .caption {
         position: absolute;
         top: 0px;
@@ -136,7 +141,8 @@ body {
     }
 
     .project:hover {
-        box-shadow: 3px 4px 4px rgb(111, 111, 133);
+        border-radius: 1px;
+        box-shadow: 3px 4px 4px rgb(25, 25, 31);
         transition: box-shadow padding .15s;
     }
 
@@ -146,13 +152,24 @@ body {
         font-weight: 400;
         padding: 7px;
         margin: 0 auto;
-        background: white;
+        background: rgb(114, 114, 121);
+        color: rgb(238, 237, 237);
         border-top: 2px solid black;
         border-bottom: 2px solid black;
         transition: border .15s, font-size .15s ;
         -webkit-transition: border .15s, font-size .15s;
     }
 
+    /* for footer/contact area */
+    footer {
+        font-size: 1.5em;
+        text-align: center;
+        padding: 20vh;
+    }
+
+    footer h1 {
+        padding-bottom: 30px;
+    }
 
     .socialMediaIcon {
         width: 80px;
@@ -164,16 +181,6 @@ body {
         width: 90%;
         text-align: center;
         margin: auto;
-    }
-
-    footer {
-        font-size: 1.5em;
-        text-align: center;
-        padding: 20vh;
-    }
-
-    footer h1 {
-        padding-bottom: 30px;
     }
 }
 
