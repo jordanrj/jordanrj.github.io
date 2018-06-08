@@ -213,7 +213,14 @@ body {
     .project {
         width: 98%;
         height: 32vw;
-        grid-column: span 3;
+        grid-column:  6/2;
+        height: 35vh;
+        margin: auto;
+    }
+
+    .caption-container img {
+        min-height: 35vh;
+       
     }
 }
 
@@ -270,11 +277,12 @@ body {
     }
 
     .project {
-        height: 25vh;
-        grid-column: span 2;
-        max-height: 20vw;
-        min-height: 250px;
+
+        height: 25vw;
+    
+        
     }
+    
 }
 
 @media (min-width: 1500px) {
@@ -308,13 +316,15 @@ body {
 
 
     .projectArea {
-        max-width: 70%;
+        max-width: 90%;
         display: block;
         margin: auto;
     }
 
+
     .projectArea a {
         text-decoration: none;
+        height: 38vh;
     }
 
     .projectAreaHeader {
@@ -328,9 +338,15 @@ body {
     }
 
     .project {
+        grid-column: span 2;
         color: black;
         display: inline-block;
         width: 30%;
         margin: 1.4%;
+        
+    }
+
+    .caption-container img {
+        background-size: contain;
     }
 } 
