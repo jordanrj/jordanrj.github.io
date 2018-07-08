@@ -42,6 +42,7 @@ body {
 
     /* Banner section */
     .aboutMe {
+        font-weight: lighter;
         width: 100%;
         background: url('./pics/background.jpg');
         background-size: cover;
@@ -49,7 +50,7 @@ body {
     }
 
     .headerDiv {
-        font-family: 'Open Sans Condensed', sans-serif;
+        font-family: sans-serif;
         width: 100%;
         background: rgba(0,0,0,.65);
         color: rgb(240,240,240);
@@ -87,7 +88,7 @@ body {
 
     .projectAreaHeader p {
         margin-top: 2vh;
-        font-size: 1.3em;
+        font-size: 1.4em;
     }
 
     /* For each project */
@@ -124,11 +125,20 @@ body {
         top: 0px;
         padding: 30px 15px;
         text-align: center;
-        background-color: rgba(220,220,220,.9);
+        background-color: rgba(250,250,250,.75);
         color: black;
+        width: 60%;
         height: 100%;
         font-size: 1.3em;
         transition: all .1s;
+
+    }
+
+    .caption-text {
+        padding: 15px;
+        margin: 13% 0;
+        text-align: left;
+        background: radial-gradient(rgba(250,250,250,.2) 50%, rgba(250,250,250,0) 75%);
     }
 
     .project:hover .projectTitle {
@@ -146,7 +156,7 @@ body {
         transition: box-shadow padding .15s;
     }
 
-    .projectTitle {              
+    .projectTitle {      
         text-align: center;
         font-size: 1.4em;
         font-weight: 400;
@@ -266,6 +276,10 @@ body {
         margin: 0 10px;
     }
 
+    .projectAreaHeader p {
+        font-size: 1.9em;
+    }
+
     .aboutMeBlurbDiv p {
         width: 70vw;
         padding: 50px 0;
@@ -334,6 +348,8 @@ body {
     }
 
     .projectAreaHeader p {
+        font-size: 1.9em;
+
         padding-top: 5px;
     }
 
