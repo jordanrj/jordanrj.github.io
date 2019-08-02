@@ -11,6 +11,11 @@ body {
     cursor: default;
 }
 
+.projectAreaHeader {
+    border: 2px solid white;
+    border-radius: 9px;
+}
+
 @media (min-width: 0px) {
     /*Header and Nav section */
     header h1, nav ul, nav ul li {
@@ -81,14 +86,20 @@ body {
 
     .projectAreaHeader { 
         font-size: .8em;
-        width: 98%;
+        width: 90%;
+        margin: 15% auto;
+        margin-bottom: -5%;
+        padding: 5% 0;
         grid-column: span 6;
-        margin: 5vh 0 0 0;
         padding-left: 5px;
+    }
+    
+    .projectAreaHeader h1 {
+        margin: 2vh 5%;
     }
 
     .projectAreaHeader p {
-        margin-top: 2vh;
+        margin: 2vh 5%;
         font-size: 1.4em;
     }
 
@@ -226,6 +237,11 @@ body {
         grid-column-gap: 15px;
         width: 98%;
         margin: auto;
+        font-size: 1.4em;
+    }
+    
+    .projectAreaHeader {
+        margin-top: 7%;
     }
 
     .project {
@@ -239,6 +255,10 @@ body {
     .caption-container img {
         min-height: 35vh;
        
+    }
+    
+    .caption-text {
+        font-size: .8em;
     }
 }
 
@@ -262,6 +282,8 @@ body {
     .aboutMeBlurbDiv p {
         width: 80vw;
     }
+    
+    
 }
 
 @media (min-width: 1200px) {
@@ -282,6 +304,10 @@ body {
 
     nav ul li {
         margin: 0 10px;
+    }
+    
+    .projectAreaHeader {
+        margin-top: 5%;
     }
 
     .projectAreaHeader p {
@@ -307,7 +333,7 @@ body {
     
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1300px) {
     header {
         width: 100%;
         padding: 0;
@@ -350,15 +376,23 @@ body {
     }
 
     .projectAreaHeader {
-        width: 95%;
+        width: 90%;
+        margin-right: 2.3%;
+        margin-top: 7%;
+        margin-bottom: 6%;
         height: 100%;
         font-size: 1.1em;
+        padding: 4% 3%;
     }
 
     .projectAreaHeader p {
-        font-size: 1.9em;
+        font-size: 1.2em;
 
         padding-top: 5px;
+    }
+    
+    .projectAreaHeader h1 {
+        font-size: 1.5em;
     }
 
     .project {
@@ -372,6 +406,10 @@ body {
 
     .caption-container img {
         background-size: contain;
+    }
+    
+    .caption-text {
+        font-size: .8em;
     }
 } 
 
