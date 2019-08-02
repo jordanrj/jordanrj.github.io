@@ -8,6 +8,7 @@ body {
     background: rgb(59, 59, 63);
     color: rgb(233, 233, 233);
     overflow: scroll;
+    cursor: default;
 }
 
 @media (min-width: 0px) {
@@ -37,7 +38,7 @@ body {
     }
 
     nav ul li:hover {
-        text-decoration: underline;
+        text-decoration: none;
     }
 
     /* Banner section */
@@ -94,6 +95,7 @@ body {
     /* For each project */
     .project {
         grid-column: span 6;
+        position: relative;
         width: 100%;
         height: auto;
         max-height: 76vw;
@@ -103,7 +105,7 @@ body {
         color: black;
         box-shadow: 7px 10px 5px rgb(29, 29, 36);
         border-radius: 0 0 2px 2px;
-        transition: box-shadow .15s;
+        transition: all .15s;
     }
 
     .project img {
@@ -117,43 +119,48 @@ body {
 
     .caption {
         height: 0%;
+        display: none;
     }
     
     /* For projects on hover */
     .project:hover .caption {
+        display: inline-block;
         position: absolute;
         top: 0px;
-        padding: 30px 15px;
-        text-align: center;
-        background-color: rgba(250,250,250,.75);
+        text-align: left;
+        background-color: rgba(250,250,250,.8);
         color: black;
-        width: 60%;
         height: 100%;
         font-size: 1.3em;
-        transition: all .1s;
-
+        -webkit-transition: all .15s;
+        -moz-transition: all .15s;        
+        transition: all .15s;
     }
-
-    .caption-text {
-        padding: 15px;
-        margin: 13% 0;
-        text-align: left;
+    
+    .project:hover .caption-text {
+        padding: 0 15px;
+        text-align: center;
         background: radial-gradient(rgba(250,250,250,.2) 50%, rgba(250,250,250,0) 75%);
+        margin-top: 10%;
+        
     }
 
     .project:hover .projectTitle {
-        border-top: 3px solid rgba(19, 153, 153, 0.842);
-        border-bottom: 2px solid rgb(247, 165, 59);
+        border-bottom: 2px solid rgb(111, 200, 245);
+        border-top: 2px solid rgb(111, 200, 245);
         padding: 10px 0;
         font-size: 1.5em;
-        transition: border .15s;
-        -webkit-transition: border .15s;
+        -webkit-transition: all .15s;
+        -moz-transition: all .15s;
+        transition: all .15s;
     }
 
     .project:hover {
         border-radius: 1px;
         box-shadow: 3px 4px 4px rgb(25, 25, 31);
-        transition: box-shadow padding .15s;
+        -webkit-transition: all .15s;
+        -moz-transition: all .15s;
+        transition: all .15s;
     }
 
     .projectTitle {      
@@ -166,8 +173,9 @@ body {
         color: rgb(238, 237, 237);
         border-top: 2px solid black;
         border-bottom: 2px solid black;
-        transition: border .15s, font-size .15s ;
-        -webkit-transition: border .15s, font-size .15s;
+        -webkit-transition: all .15s;
+        -moz-transition: all .15s;        
+        transition: all .15s;
     }
 
     /* for footer/contact area */
@@ -366,3 +374,8 @@ body {
         background-size: contain;
     }
 } 
+
+.project:hover .projectTitle {
+    text-decoration: underline;
+    text-decoration-color: rgb(200, 200, 200);
+}
