@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    
 }
 
 body {
@@ -9,6 +10,8 @@ body {
     color: rgb(233, 233, 233);
     overflow: scroll;
     cursor: default;
+    overflow-x: hidden;
+
 }
 
 .projectAreaHeader {
@@ -387,7 +390,6 @@ body {
 
     .projectAreaHeader p {
         font-size: 1.2em;
-
         padding-top: 5px;
     }
     
