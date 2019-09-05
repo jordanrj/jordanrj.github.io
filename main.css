@@ -11,7 +11,13 @@ body {
     overflow: scroll;
     cursor: default;
     overflow-x: hidden;
+}
 
+.nav-link:hover {
+    text-decoration: underline;
+}
+.git-link {
+    color: white;
 }
 
 .projectAreaHeader {
@@ -418,4 +424,15 @@ body {
 .project:hover .projectTitle {
     text-decoration: underline;
     text-decoration-color: rgb(200, 200, 200);
+}
+
+.about-me-intro {
+    margin-left: 5vw;
+    display: block;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.nav-link:hover {
+    text-decoration: underline !important;
 }
