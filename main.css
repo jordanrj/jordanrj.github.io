@@ -434,6 +434,6 @@ body {
     text-decoration: underline !important;
 }
 
-a, a.git-link. a.get-link:visited {
+a, a.git-link, a.get-link:visited {
     color: white;
 }
